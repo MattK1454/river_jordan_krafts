@@ -9,7 +9,7 @@ const App = () => {
       <Header />
       <main>
         <Container>
-          <h1>Welcome to C_squared</h1>
+          <h1>Welcome to River Jordan Krafts</h1>
         </Container>
       </main>
       <Footer />
