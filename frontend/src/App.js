@@ -7,7 +7,7 @@ const App = () => {
   return (
     <React.Fragment>
       <Header />
-      <main>
+      <main className="py-3">
         <Container>
           <h1>Welcome to River Jordan Krafts</h1>
         </Container>
