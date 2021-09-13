@@ -1,0 +1,25 @@
+{
+  "name": "river_jordan_krafts",
+  "version": "1.0.0",
+  "description": "River Jordan Kraft store app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "keywords": [
+    "Woodworking",
+    "Crafts",
+    "River",
+    "Jordan",
+    "Krafts",
+    "Sewing",
+    "Shop",
+    "Pens",
+    "Products"
+  ],
+  "author": "Matthew Kaufmann",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
