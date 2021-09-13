@@ -2,8 +2,8 @@ const products = [
     {
         _id: "1",
         name: "Bowl 1",
-        image: "./images/bowl_1.jpg",
-        description: "Wooden bowl",
+        image: "/images/bowl_1.jpg",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         brand: "River Jordan Krafts",
         category: "Woodworking",
         price: 100.00,
@@ -15,8 +15,8 @@ const products = [
     {
         _id: "2",
         name: "Bowl 2",
-        image: "./images/bowl_2.jpg",
-        description: "Wooden bowl",
+        image: "/images/bowl_2.jpg",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         brand: "River Jordan Krafts",
         category: "Woodworking",
         price: 100.00,
@@ -28,8 +28,8 @@ const products = [
     {
         _id: "3",
         name: "Bowl 3",
-        image: "./images/bowl_3.jpg",
-        description: "Wooden bowl",
+        image: "/images/bowl_3.jpg",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         brand: "River Jordan Krafts",
         category: "Woodworking",
         price: 100.00,
@@ -41,8 +41,8 @@ const products = [
     {
         _id: "4",
         name: "Elephant quilt",
-        image: "./images/elephant_quilt.jpg",
-        description: "Handmade elephant quilt",
+        image: "/images/elephant_quilt.jpg",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         brand: "River Jordan Krafts",
         category: "Sewing",
         price: 150.00,
@@ -54,8 +54,8 @@ const products = [
     {
         _id: "5",
         name: "Shaker",
-        image: "./images/shaker.jpg",
-        description: "Wooden bowl",
+        image: "/images/shaker.jpg",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         brand: "River Jordan Krafts",
         category: "Woodworking",
         price: 75.00,
@@ -67,12 +67,12 @@ const products = [
     {
         _id: "6",
         name: "superhero_mask",
-        image: "./images/superhero_mask.jpg",
-        description: "Superhero Mask",
+        image: "/images/superhero_mask.jpg",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         brand: "River Jordan Krafts",
         category: "Sewing",
         price: 50.00,
-        countInStock: 2,
+        countInStock: 1,
         rating: 50.0,
         numReviews: 100
 
