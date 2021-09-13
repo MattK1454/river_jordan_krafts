@@ -18,7 +18,7 @@ function ProductScreen({ match }) {
 
     fetchProduct();
 
-  }, [])
+  }, [match.params.id])
 
   return (
     <React.Fragment>
