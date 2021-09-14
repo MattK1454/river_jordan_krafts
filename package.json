@@ -7,8 +7,10 @@
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
-    "client": "npm start --prefix frontend",
-    "dev": "concurrently \"yarn server\" \"npm run client\""
+    "client": "yarn --cwd frontend/react-scripts start",
+    "dev": "concurrently \"yarn server\" \"yarn client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
   },
   "keywords": [
     "Woodworking",
