@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: '1',
     name: 'Bowl 1',
     image: '/images/bowl_1.jpg',
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: '2',
     name: 'Bowl 2',
     image: '/images/bowl_2.jpg',
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 20,
   },
   {
-    _id: '3',
     name: 'Bowl 3',
     image: '/images/bowl_3.jpg',
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 15,
   },
   {
-    _id: '4',
     name: 'Elephant quilt',
     image: '/images/elephant_quilt.jpg',
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: '5',
     name: 'Shaker',
     image: '/images/shaker.jpg',
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '6',
     name: 'superhero_mask',
     image: '/images/superhero_mask.jpg',
     description:
