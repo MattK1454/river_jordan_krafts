@@ -1,7 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { Row, Col, Image, ListGroup, Card, Button, Form } from 'react-bootstrap';
+import {
+  Row,
+  Col,
+  Image,
+  ListGroup,
+  Card,
+  Button,
+  Form,
+} from 'react-bootstrap';
 import Rating from '../components/Rating';
 import Loader from '../components/Loader';
 import Message from '../components/Message';
@@ -20,7 +28,7 @@ function ProductScreen({ history, match }) {
   }, [dispatch, match]);
 
   const addToCartHandler = () => {
-    history.push(`/cart/${match.params.id}?qty=${qty}`)
+    history.push(`/cart/${match.params.id}?qty=${qty}`);
   };
 
   return (
@@ -79,22 +87,28 @@ function ProductScreen({ history, match }) {
                     <Row>
                       <Col>Qty:</Col>
                       <Col>
-                        <Form.Control className="p-0" as='select' value={qty} onChange={(e) => 
-                        setQty(e.target.value)}>
-                          {
-                            [...Array(product.countInStock).keys()].map(x => (
-                              <option key={x + 1} className="text-center" value={x + 1}>
-                                &nbsp;{x+1}
-                              </option>
-                            ))
-                          }
+                        <Form.Control
+                          className='p-0'
+                          as='select'
+                          value={qty}
+                          onChange={(e) => setQty(e.target.value)}
+                        >
+                          {[...Array(product.countInStock).keys()].map((x) => (
+                            <option
+                              key={x + 1}
+                              className='text-center'
+                              value={x + 1}
+                            >
+                              &nbsp;{x + 1}
+                            </option>
+                          ))}
                         </Form.Control>
                       </Col>
                     </Row>
                   </ListGroup.Item>
                 )}
 
-                <ListGroup.Item className="d-grid gap-0">
+                <ListGroup.Item className='d-grid gap-0'>
                   <Button
                     onClick={addToCartHandler}
                     className='btn-block'
