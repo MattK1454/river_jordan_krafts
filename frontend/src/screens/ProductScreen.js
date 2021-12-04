@@ -99,7 +99,7 @@ function ProductScreen({ history, match }) {
                               className='text-center'
                               value={x + 1}
                             >
-                              &nbsp;{x + 1}
+                              {x + 1}
                             </option>
                           ))}
                         </Form.Control>
