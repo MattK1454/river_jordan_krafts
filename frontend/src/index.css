@@ -20,6 +20,11 @@ h2 {
   appearance: menulist-button;
 }
 
+#checkoutSteps {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 .rating span {
   margin: 0.1rem;
 }
