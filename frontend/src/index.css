@@ -25,6 +25,10 @@ h2 {
   overflow: hidden;
 }
 
+button {
+  width: 100%;
+}
+
 .rating span {
   margin: 0.1rem;
 }
