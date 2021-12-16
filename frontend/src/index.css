@@ -2,6 +2,10 @@ main {
   min-height: 80vh;
 }
 
+.navbar-brand {
+  font-size: 1rem;
+}
+
 h3 {
   padding: 1rem 0;
 }
@@ -25,10 +29,10 @@ h2 {
   overflow: hidden;
 }
 
-button {
-  width: 100%;
-}
-
 .rating span {
   margin: 0.1rem;
+}
+
+th, tr {
+  font-size:smaller;
 }
