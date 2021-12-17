@@ -60,6 +60,8 @@ const OrderScreen = ({ match }) => {
   const successPaymentHandler = (paymentResult) => {
     console.log(paymentResult);
     dispatch(payOrder(orderId, paymentResult));
+    localStorage.removeItem('cartItems');
+    document.location.assign('/profile');
   };
 
   return loading ? (
