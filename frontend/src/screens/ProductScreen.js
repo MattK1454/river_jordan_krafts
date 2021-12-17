@@ -28,9 +28,9 @@ function ProductScreen({ history, match }) {
     dispatch(listProductDetails(match.params.id));
   }, [dispatch, match]);
 
-  const addToCartHandler = (props) => {
+  const addToCartHandler = () => {
     dispatch(addToCart(product._id, qty));
-    props.history.push('/cart');
+    history.push('/cart');
   };
 
   return (
