@@ -13,10 +13,17 @@ import {
 import Rating from '../components/Rating';
 import Loader from '../components/Loader';
 import Message from '../components/Message';
-import { listProductDetails } from '../actions/productActions';
+import { listProductDetails, updateProduct } from '../actions/productActions';
 
 function ProductScreen({ history, match }) {
   const [qty, setQty] = useState(1);
+  const [name, setName] = useState('');
+  const [price, setPrice] = useState(0);
+  const [image, setImage] = useState('');
+  const [brand, setBrand] = useState('');
+  const [category, setCategory] = useState('');
+  const [countInStock, setCountInStock] = useState();
+  const [description, setDescription] = useState('');
 
   const dispatch = useDispatch();
 
@@ -25,9 +32,28 @@ function ProductScreen({ history, match }) {
 
   useEffect(() => {
     dispatch(listProductDetails(match.params.id));
-  }, [dispatch, match]);
+    setName(product.name);
+    setPrice(product.price);
+    setImage(product.image);
+    setBrand(product.brand);
+    setCategory(product.category);
+    setCountInStock(product.countInStock - qty);
+    setDescription(product.description);
+  }, [dispatch, match, product, qty]);
 
   const addToCartHandler = () => {
+    dispatch(
+      updateProduct({
+        _id: match.params.id,
+        name,
+        price,
+        image,
+        brand,
+        category,
+        description,
+        countInStock,
+      })
+    );
     history.push(`/cart/${match.params.id}?qty=${qty}`)
   };
 
