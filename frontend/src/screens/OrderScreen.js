@@ -78,8 +78,6 @@ const OrderScreen = ({ match, history }) => {
   const successPaymentHandler = (paymentResult) => {
     console.log(paymentResult);
     dispatch(payOrder(orderId, paymentResult));
-    localStorage.removeItem('cartItems');
-    document.location.assign('/profile');
   };
 
   const deliverHandler = () => {
