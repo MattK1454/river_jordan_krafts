@@ -14,7 +14,6 @@ import Rating from '../components/Rating';
 import Loader from '../components/Loader';
 import Message from '../components/Message';
 import { listProductDetails } from '../actions/productActions';
-// import { addToCart } from '../actions/cartActions';
 
 function ProductScreen({ history, match }) {
   const [qty, setQty] = useState(1);
@@ -92,7 +91,9 @@ function ProductScreen({ history, match }) {
                           className='p-0'
                           as='select'
                           value={qty}
-                          onChange={(e) => setQty(e.target.value)}
+                          onChange={(e) => {
+                            setQty(e.target.value);
+                          }}
                         >
                           {[...Array(product.countInStock).keys()].map((x) => (
                             <option
